@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-4xl mx-auto text-center space-y-12">
         {/* Profile Image */}
         <div className="relative inline-block">
