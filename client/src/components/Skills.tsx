@@ -2,58 +2,43 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 export default function Skills() {
-  // TODO: Replace with real skills data
   const skillCategories = [
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'React', level: 'Expert' },
-        { name: 'TypeScript', level: 'Advanced' },
-        { name: 'Next.js', level: 'Advanced' },
-        { name: 'Vue.js', level: 'Intermediate' },
-        { name: 'Tailwind CSS', level: 'Expert' },
-        { name: 'SASS/SCSS', level: 'Advanced' },
-        { name: 'Framer Motion', level: 'Intermediate' },
-        { name: 'Responsive Design', level: 'Expert' }
+        { name: 'HTML5', level: 'Advanced' },
+        { name: 'CSS3', level: 'Advanced' },
+        { name: 'JavaScript', level: 'Advanced' },
+        { name: 'Responsive Design', level: 'Advanced' },
+        { name: 'React.js', level: 'Intermediate' },
+        { name: 'Tailwind CSS', level: 'Intermediate' },
+        { name: 'UI/UX Design Principles', level: 'Beginner' }
       ]
     },
     {
       title: 'Backend Development',
       skills: [
-        { name: 'Node.js', level: 'Expert' },
-        { name: 'Express.js', level: 'Advanced' },
-        { name: 'NestJS', level: 'Intermediate' },
         { name: 'Python', level: 'Advanced' },
-        { name: 'FastAPI', level: 'Intermediate' },
-        { name: 'GraphQL', level: 'Advanced' },
-        { name: 'REST APIs', level: 'Expert' },
-        { name: 'Microservices', level: 'Intermediate' }
+        { name: 'Django', level: 'Advanced' },
+        { name: 'REST APIs', level: 'Advanced' },
+        { name: 'API Integration', level: 'Intermediate' }
       ]
     },
     {
       title: 'Database & Tools',
       skills: [
         { name: 'PostgreSQL', level: 'Advanced' },
-        { name: 'MongoDB', level: 'Advanced' },
-        { name: 'Redis', level: 'Intermediate' },
-        { name: 'Prisma', level: 'Advanced' },
-        { name: 'Docker', level: 'Advanced' },
-        { name: 'Git', level: 'Expert' },
-        { name: 'Jest', level: 'Advanced' },
-        { name: 'Cypress', level: 'Intermediate' }
+        { name: 'SQLite', level: 'Advanced' },
+        { name: 'Git', level: 'Expert' }
       ]
     },
     {
       title: 'Cloud & DevOps',
       skills: [
-        { name: 'AWS', level: 'Advanced' },
         { name: 'Vercel', level: 'Expert' },
-        { name: 'Netlify', level: 'Advanced' },
+        { name: 'Render', level: 'Expert' },
         { name: 'CI/CD', level: 'Advanced' },
-        { name: 'GitHub Actions', level: 'Advanced' },
-        { name: 'Terraform', level: 'Beginner' },
-        { name: 'Kubernetes', level: 'Beginner' },
-        { name: 'Monitoring', level: 'Intermediate' }
+        { name: 'GitHub Actions', level: 'Advanced' }
       ]
     }
   ];

@@ -16,7 +16,7 @@ export default function Footer() {
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
-    { id: 'experience', label: 'Experience' },
+    { id: 'experience', label: 'Education' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -24,17 +24,17 @@ export default function Footer() {
     {
       icon: Github,
       label: 'GitHub',
-      url: 'https://github.com/yourusername'
+      url: 'https://github.com/SairAli7037/'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourusername'
+      url: 'https://www.linkedin.com/in/sair-ali-9a7552243'
     },
     {
       icon: Mail,
       label: 'Email',
-      url: 'mailto:your.email@example.com'
+      url: 'mailto:sairali7037@gmail.com'
     }
   ];
 
@@ -45,11 +45,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-foreground" data-testid="text-footer-brand">
-              Your Name
+              Sair Ali
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed" data-testid="text-footer-description">
-              Full Stack Developer passionate about creating beautiful, 
-              functional web applications that make a difference.
+              Full Stack Developer passionate about creating impactful 
+              web applications using Django, React, and modern technologies.
             </p>
             <div className="flex space-x-2">
               {socialLinks.map((social, index) => (
@@ -105,7 +105,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm" data-testid="text-footer-copyright">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Sair Ali. All rights reserved.
           </p>
           <div className="flex items-center space-x-1 text-muted-foreground text-sm">
             <span>Made with</span>

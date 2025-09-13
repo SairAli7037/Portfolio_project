@@ -26,79 +26,33 @@ interface Education {
 type ExperienceItem = WorkExperience | Education;
 
 export default function Experience() {
-  // TODO: Replace with real experience data
-  const experiences: WorkExperience[] = [
-    {
-      type: 'work',
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      duration: '2022 - Present',
-      description: 'Leading development of scalable web applications serving 100k+ users. Mentoring junior developers and architecting cloud-native solutions.',
-      technologies: ['React', 'Node.js', 'AWS', 'PostgreSQL', 'TypeScript'],
-      achievements: [
-        'Reduced application load time by 40% through optimization',
-        'Led team of 5 developers on major product redesign',
-        'Implemented CI/CD pipeline reducing deployment time by 60%'
-      ]
-    },
-    {
-      type: 'work',
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations Inc',
-      location: 'Remote',
-      duration: '2020 - 2022',
-      description: 'Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to implement pixel-perfect UIs.',
-      technologies: ['Vue.js', 'Express.js', 'MongoDB', 'Docker'],
-      achievements: [
-        'Built e-commerce platform processing $2M+ annually',
-        'Developed real-time chat application with 10k+ concurrent users',
-        'Maintained 99.9% uptime across all client applications'
-      ]
-    },
-    {
-      type: 'work',
-      title: 'Frontend Developer',
-      company: 'StartupXYZ',
-      location: 'Austin, TX',
-      duration: '2019 - 2020',
-      description: 'Focused on creating responsive web applications and improving user experience. Worked closely with UX designers to implement intuitive interfaces.',
-      technologies: ['React', 'SASS', 'Redux', 'Jest'],
-      achievements: [
-        'Increased user engagement by 35% through UX improvements',
-        'Implemented comprehensive testing suite with 90% coverage',
-        'Optimized mobile performance improving load times by 50%'
-      ]
-    }
-  ];
-
   const education: Education[] = [
     {
       type: 'education',
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of Technology',
-      location: 'California, USA',
-      duration: '2015 - 2019',
-      description: 'Focused on software engineering, algorithms, and data structures. Graduated with honors.',
+      degree: 'Bachelor of Technology in Electronics Engineering',
+      school: 'ZAKIR HUSAIN COLLEGE OF ENGINEERING AND TECHNOLOGY, AMU',
+      location: 'ALIGARH, UTTAR PRADESH',
+      duration: '2026',
+      description: 'Focused on electronics, embedded systems, and core engineering subjects, while also developing a strong interest in software development, algorithms, and web technologies.',
       achievements: [
-        'Dean\'s List for 3 consecutive semesters',
-        'Led university programming competition team',
-        'Completed senior capstone project on machine learning'
+        'Strong foundation in electronics and embedded systems',
+        'Developed passion for software development and web technologies',
+        'Currently building expertise in algorithms and data structures'
       ]
     }
   ];
 
-  const allExperiences: ExperienceItem[] = [...experiences, ...education];
+  const allExperiences: ExperienceItem[] = [...education];
 
   return (
     <section id="experience" className="py-24 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-experience-title">
-            Experience & Education
+            Education
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-experience-subtitle">
-            My professional journey and educational background
+            My educational background and academic journey
           </p>
         </div>
 

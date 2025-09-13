@@ -54,19 +54,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'sairali7037@gmail.com',
+      link: 'mailto:sairali7037@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '7037284162',
+      link: 'tel:+917037284162'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Aligarh, Uttar Pradesh, India',
       link: null
     }
   ];
@@ -75,17 +75,12 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      url: 'https://github.com/yourusername'
+      url: 'https://github.com/SairAli7037/'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourusername'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      url: 'https://twitter.com/yourusername'
+      url: 'https://www.linkedin.com/in/sair-ali-9a7552243'
     }
   ];
 
@@ -97,7 +92,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-contact-subtitle">
-            Have a project in mind or just want to chat? I'd love to hear from you.
+            Have a project in mind, a collaboration opportunity or just want to connect? I'd love to hear from you.
           </p>
         </div>
 
