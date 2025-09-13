@@ -5,10 +5,11 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { useMutation } from '@tanstack/react-query';
+import { apiRequest } from '@/lib/queryClient';
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,30 +25,29 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // TODO: Replace with actual form submission logic
-    try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+  const contactMutation = useMutation({
+    mutationFn: (data: typeof formData) => 
+      apiRequest('POST', '/api/contact', data),
+    onSuccess: () => {
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
-      
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    },
+    onError: (error: any) => {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: error.message || "Failed to send message. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    contactMutation.mutate(formData);
   };
 
   const contactInfo = [
@@ -153,10 +153,10 @@ export default function Contact() {
                 <Button 
                   type="submit" 
                   className="w-full" 
-                  disabled={isSubmitting}
+                  disabled={contactMutation.isPending}
                   data-testid="button-submit-form"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {contactMutation.isPending ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
