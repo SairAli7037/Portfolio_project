@@ -42,21 +42,21 @@ export default function About() {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-lg text-foreground leading-relaxed" data-testid="text-about-intro">
-                Hello! I'm a Full Stack Developer with over 5 years of experience building 
-                web applications. I discovered my passion for programming during college 
-                and have been hooked ever since.
+                Hello! I'm a Full-Stack Developer passionate about building impactful web applications. 
+                I began my journey with HTML websites and has evolved into crafting complex, scalable 
+                applications using modern frameworks like React, Django. I Love the entire process of 
+                bringing ideas to life through code.
               </p>
               
               <p className="text-foreground leading-relaxed" data-testid="text-about-journey">
-                My journey started with simple HTML websites and has evolved into crafting 
-                complex, scalable applications using modern frameworks like React, Next.js, 
-                and Node.js. I love the entire process of bringing ideas to life through code.
+                Currently, I'm strengthening my foundation in Data Structures, Algorithms, and core 
+                Computer Science subjects to grow as a well-rounded Software Engineer. I enjoy solving 
+                problems, learning new technologies, and turning ideas into working products.
               </p>
               
               <p className="text-foreground leading-relaxed" data-testid="text-about-focus">
-                When I'm not coding, you can find me exploring new technologies, contributing 
-                to open source projects, or hiking in the mountains. I believe in continuous 
-                learning and staying up-to-date with industry trends.
+                When I'm not coding, I like exploring emerging tech trends and continuously improving 
+                my skills to stay future-ready.
               </p>
             </div>
 
@@ -64,9 +64,9 @@ export default function About() {
               <p className="text-muted-foreground font-medium mb-2">Currently focused on:</p>
               <ul className="space-y-1 text-foreground">
                 <li data-testid="text-focus-1">• Building responsive, accessible web applications</li>
-                <li data-testid="text-focus-2">• Cloud architecture and deployment strategies</li>
-                <li data-testid="text-focus-3">• Performance optimization and user experience</li>
-                <li data-testid="text-focus-4">• Mentoring junior developers</li>
+                <li data-testid="text-focus-2">• Strengthening problem-solving through DSA</li>
+                <li data-testid="text-focus-3">• Improving performance, usability, and scalability in my projects</li>
+                <li data-testid="text-focus-4">• Expanding my knowledge of core software engineering concepts</li>
               </ul>
             </div>
           </div>
