@@ -4,67 +4,26 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github } from 'lucide-react';
 
 export default function Projects() {
-  // TODO: Replace with real project data
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern technologies and responsive design.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/yourusername/ecommerce-platform',
-      liveUrl: 'https://ecommerce-demo.com',
+      title: 'Learning Management System (LMS)',
+      description: 'A full-featured LMS built with Django and React, allowing instructors to create courses, add lessons, assign quizzes, and track student progress. Students can enroll, learn sequentially, take quizzes, and monitor their progress in an intuitive dashboard.',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center',
+      technologies: ['Python', 'React', 'Django', 'PostgreSQL'],
+      githubUrl: 'https://github.com/SairAli7037/Smart-LMS',
+      liveUrl: 'https://smart-lms-nine.vercel.app',
       featured: true
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'Socket.io', 'Chakra UI'],
-      githubUrl: 'https://github.com/yourusername/task-manager',
-      liveUrl: 'https://taskmanager-demo.com',
+      title: 'E-Commerce Website',
+      description: 'An E-Commerce platform with user authentication, product listings, cart management, secure checkout, and order tracking. Designed with scalability and user experience in mind, offering a smooth shopping experience for customers.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center',
+      technologies: ['Python', 'Django', 'SQLite', 'Bootstrap'],
+      githubUrl: 'https://github.com/SairAli7037/Ecommerce-Project',
+      liveUrl: 'https://ecommerce-shopcart.onrender.com/',
       featured: true
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop&crop=center',
-      technologies: ['Vue.js', 'Express.js', 'MongoDB', 'Chart.js', 'OpenWeather API'],
-      githubUrl: 'https://github.com/yourusername/weather-dashboard',
-      liveUrl: 'https://weather-dashboard-demo.com',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Social Media Analytics',
-      description: 'Analytics platform for social media management with data visualization, engagement tracking, and automated reporting.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center',
-      technologies: ['React', 'Python', 'FastAPI', 'Redis', 'D3.js'],
-      githubUrl: 'https://github.com/yourusername/social-analytics',
-      liveUrl: 'https://social-analytics-demo.com',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing projects and skills with smooth animations and modern design principles.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&crop=center',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-      githubUrl: 'https://github.com/yourusername/portfolio',
-      liveUrl: 'https://yourportfolio.com',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'API Management Tool',
-      description: 'Developer tool for API testing, documentation, and monitoring with team collaboration features and automated testing.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&crop=center',
-      technologies: ['Angular', 'NestJS', 'PostgreSQL', 'Docker', 'AWS'],
-      githubUrl: 'https://github.com/yourusername/api-management',
-      liveUrl: 'https://api-tool-demo.com',
-      featured: false
     }
   ];
 
