@@ -26,6 +26,11 @@ export default function Hero() {
             src={heroImage}
             alt="Sair Ali - Professional Portrait"
             className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-border"
+            style={{
+              objectPosition: '50% 25%',
+              transform: 'scale(1.8)',
+              transformOrigin: 'center'
+            }}
             data-testid="img-hero-profile"
           />
           <div className="absolute inset-0 rounded-full bg-gradient-to-t from-background/20 to-transparent"></div>
