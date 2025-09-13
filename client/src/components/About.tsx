@@ -37,39 +37,53 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Main About Content */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <p className="text-lg text-foreground leading-relaxed" data-testid="text-about-intro">
-                Hello! I'm a Full-Stack Developer passionate about building impactful web applications. 
-                I began my journey with HTML websites and has evolved into crafting complex, scalable 
-                applications using modern frameworks like React, Django. I Love the entire process of 
-                bringing ideas to life through code.
-              </p>
-              
-              <p className="text-foreground leading-relaxed" data-testid="text-about-journey">
-                Currently, I'm strengthening my foundation in Data Structures, Algorithms, and core 
-                Computer Science subjects to grow as a well-rounded Software Engineer. I enjoy solving 
-                problems, learning new technologies, and turning ideas into working products.
-              </p>
-              
-              <p className="text-foreground leading-relaxed" data-testid="text-about-focus">
-                When I'm not coding, I like exploring emerging tech trends and continuously improving 
-                my skills to stay future-ready.
-              </p>
-            </div>
+          <Card className="p-8 h-fit">
+            <CardContent className="p-0 space-y-6">
+              <div className="space-y-4">
+                <p className="text-lg text-foreground leading-relaxed" data-testid="text-about-intro">
+                  Hello! I'm a Full-Stack Developer passionate about building impactful web applications. 
+                  I began my journey with HTML websites and has evolved into crafting complex, scalable 
+                  applications using modern frameworks like React, Django. I Love the entire process of 
+                  bringing ideas to life through code.
+                </p>
+                
+                <p className="text-foreground leading-relaxed" data-testid="text-about-journey">
+                  Currently, I'm strengthening my foundation in Data Structures, Algorithms, and core 
+                  Computer Science subjects to grow as a well-rounded Software Engineer. I enjoy solving 
+                  problems, learning new technologies, and turning ideas into working products.
+                </p>
+                
+                <p className="text-foreground leading-relaxed" data-testid="text-about-focus">
+                  When I'm not coding, I like exploring emerging tech trends and continuously improving 
+                  my skills to stay future-ready.
+                </p>
+              </div>
 
-            <div className="pt-4">
-              <p className="text-muted-foreground font-medium mb-2">Currently focused on:</p>
-              <ul className="space-y-1 text-foreground">
-                <li data-testid="text-focus-1">• Building responsive, accessible web applications</li>
-                <li data-testid="text-focus-2">• Strengthening problem-solving through DSA</li>
-                <li data-testid="text-focus-3">• Improving performance, usability, and scalability in my projects</li>
-                <li data-testid="text-focus-4">• Expanding my knowledge of core software engineering concepts</li>
-              </ul>
-            </div>
-          </div>
+              <div className="pt-4 border-t border-border">
+                <p className="text-muted-foreground font-medium mb-3">Currently focused on:</p>
+                <ul className="space-y-2 text-foreground">
+                  <li className="flex items-start" data-testid="text-focus-1">
+                    <span className="text-primary mr-2 mt-1">•</span>
+                    <span>Building responsive, accessible web applications</span>
+                  </li>
+                  <li className="flex items-start" data-testid="text-focus-2">
+                    <span className="text-primary mr-2 mt-1">•</span>
+                    <span>Strengthening problem-solving through DSA</span>
+                  </li>
+                  <li className="flex items-start" data-testid="text-focus-3">
+                    <span className="text-primary mr-2 mt-1">•</span>
+                    <span>Improving performance, usability, and scalability in my projects</span>
+                  </li>
+                  <li className="flex items-start" data-testid="text-focus-4">
+                    <span className="text-primary mr-2 mt-1">•</span>
+                    <span>Expanding my knowledge of core software engineering concepts</span>
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Highlights Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
