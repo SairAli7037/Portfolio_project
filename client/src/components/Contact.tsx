@@ -9,6 +9,8 @@ import { useMutation } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient';
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from 'lucide-react';
 
+const BACKEND_URL = "https://portfolio-project-8onh.onrender.com";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -27,7 +29,7 @@ export default function Contact() {
 
   const contactMutation = useMutation({
     mutationFn: (data: typeof formData) => 
-      apiRequest('POST', '/api/contact', data),
+     apiRequest('POST', `${BACKEND_URL}/api/contact`, data),
     onSuccess: () => {
       toast({
         title: "Message sent!",
