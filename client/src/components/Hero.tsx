@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Linkedin, Mail, Code, Github } from 'lucide-react';
-import heroImage from '@assets/1757581299494 (1)_1757789486844.jpg';
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -20,20 +19,11 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-4xl mx-auto text-center space-y-12">
-        {/* Profile Image */}
+        {/* Profile Placeholder */}
         <div className="relative inline-block">
-          <img
-            src={heroImage}
-            alt="Sair Ali - Professional Portrait"
-            className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-border"
-            style={{
-              objectPosition: '50% 25%',
-              transform: 'scale(1.8)',
-              transformOrigin: 'center'
-            }}
-            data-testid="img-hero-profile"
-          />
-          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-background/20 to-transparent"></div>
+          <div className="w-48 h-48 rounded-full mx-auto bg-gradient-to-br from-primary/20 to-primary/5 border-4 border-border flex items-center justify-center">
+            <div className="text-4xl font-bold text-primary">SA</div>
+          </div>
         </div>
 
         {/* Text Content */}
