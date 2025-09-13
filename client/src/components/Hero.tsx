@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Code } from 'lucide-react';
 import heroImage from '@assets/generated_images/Professional_developer_headshot_portrait_5ecf1a0a.png';
 
 export default function Hero() {
@@ -36,7 +36,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold text-foreground">
             Hi, I'm{' '}
             <span className="text-primary" data-testid="text-hero-name">
-              Your Name
+              SAIR ALI
             </span>
           </h1>
           
@@ -45,8 +45,7 @@ export default function Hero() {
           </p>
 
           <p className="text-lg text-muted-foreground max-w-xl mx-auto" data-testid="text-hero-description">
-            I specialize in React, Node.js, and cloud technologies. 
-            Passionate about building scalable applications that make a difference.
+            I specialize in Django, React, and modern technologies. Currently enhancing my problem-solving skills through DSA and core CS fundamentals, with a passion for crafting impactful digital solutions.
           </p>
         </div>
 
@@ -78,15 +77,15 @@ export default function Hero() {
           <Button 
             variant="ghost" 
             size="icon"
-            onClick={() => window.open('https://github.com', '_blank')}
-            data-testid="link-github"
+            onClick={() => window.open('https://leetcode.com/u/Sair123/', '_blank')}
+            data-testid="link-leetcode"
           >
-            <Github className="w-5 h-5" />
+            <Code className="w-5 h-5" />
           </Button>
           <Button 
             variant="ghost" 
             size="icon"
-            onClick={() => window.open('https://linkedin.com', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/sair-ali-9a7552243', '_blank')}
             data-testid="link-linkedin"
           >
             <Linkedin className="w-5 h-5" />
@@ -94,7 +93,7 @@ export default function Hero() {
           <Button 
             variant="ghost" 
             size="icon"
-            onClick={() => window.open('mailto:your.email@example.com')}
+            onClick={() => window.open('mailto:sairali7037@gmail.com')}
             data-testid="link-email"
           >
             <Mail className="w-5 h-5" />
