@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Linkedin, Mail, Code, Github } from 'lucide-react';
-import heroImage from '@assets/generated_images/Professional_developer_headshot_portrait_5ecf1a0a.png';
+import heroImage from '@assets/1757581299494 (1)_1757789486844.jpg';
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="relative inline-block">
           <img
             src={heroImage}
-            alt="Your Name - Professional Portrait"
+            alt="Sair Ali - Professional Portrait"
             className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-border"
             data-testid="img-hero-profile"
           />
