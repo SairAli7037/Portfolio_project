@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Linkedin, Mail, Code } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Code, Github } from 'lucide-react';
 import heroImage from '@assets/generated_images/Professional_developer_headshot_portrait_5ecf1a0a.png';
 
 export default function Hero() {
@@ -73,30 +73,49 @@ export default function Hero() {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-4 pt-4">
+        <div className="flex justify-center gap-6 pt-4">
           <Button 
-            variant="ghost" 
-            size="icon"
-            onClick={() => window.open('https://leetcode.com/u/Sair123/', '_blank')}
-            data-testid="link-leetcode"
+            variant="outline" 
+            size="lg"
+            className="group relative overflow-hidden bg-background/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300"
+            onClick={() => window.open('https://github.com/SairAli7037', '_blank')}
+            data-testid="link-github"
           >
-            <Code className="w-5 h-5" />
+            <Github className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
+            <span className="hidden sm:inline">GitHub</span>
           </Button>
+          
           <Button 
-            variant="ghost" 
-            size="icon"
+            variant="outline" 
+            size="lg"
+            className="group relative overflow-hidden bg-background/50 backdrop-blur-sm border-border/50 hover:border-blue-500/50 transition-all duration-300"
             onClick={() => window.open('https://www.linkedin.com/in/sair-ali-9a7552243', '_blank')}
             data-testid="link-linkedin"
           >
-            <Linkedin className="w-5 h-5" />
+            <Linkedin className="w-5 h-5 mr-2 transition-transform group-hover:scale-110 group-hover:text-blue-500" />
+            <span className="hidden sm:inline">LinkedIn</span>
           </Button>
+          
           <Button 
-            variant="ghost" 
-            size="icon"
+            variant="outline" 
+            size="lg"
+            className="group relative overflow-hidden bg-background/50 backdrop-blur-sm border-border/50 hover:border-orange-500/50 transition-all duration-300"
+            onClick={() => window.open('https://leetcode.com/u/Sair123/', '_blank')}
+            data-testid="link-leetcode"
+          >
+            <Code className="w-5 h-5 mr-2 transition-transform group-hover:scale-110 group-hover:text-orange-500" />
+            <span className="hidden sm:inline">LeetCode</span>
+          </Button>
+          
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="group relative overflow-hidden bg-background/50 backdrop-blur-sm border-border/50 hover:border-green-500/50 transition-all duration-300"
             onClick={() => window.open('mailto:sairali7037@gmail.com')}
             data-testid="link-email"
           >
-            <Mail className="w-5 h-5" />
+            <Mail className="w-5 h-5 mr-2 transition-transform group-hover:scale-110 group-hover:text-green-500" />
+            <span className="hidden sm:inline">Email</span>
           </Button>
         </div>
       </div>
