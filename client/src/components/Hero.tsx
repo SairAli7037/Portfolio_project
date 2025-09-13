@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Linkedin, Mail, Code, Github } from 'lucide-react';
+import profilePhoto from '@assets/photo1_1757797521515.png';
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -19,10 +20,15 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-4xl mx-auto text-center space-y-12">
-        {/* Profile Placeholder */}
+        {/* Profile Photo */}
         <div className="relative inline-block">
-          <div className="w-48 h-48 rounded-full mx-auto bg-gradient-to-br from-primary/20 to-primary/5 border-4 border-border flex items-center justify-center">
-            <div className="text-4xl font-bold text-primary">SA</div>
+          <div className="w-48 h-48 rounded-full mx-auto border-4 border-border overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5">
+            <img 
+              src={profilePhoto}
+              alt="Sair Ali - Full Stack Developer"
+              className="w-full h-full object-cover object-top"
+              data-testid="img-profile-photo"
+            />
           </div>
         </div>
 
