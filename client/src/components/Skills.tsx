@@ -3,12 +3,22 @@ import { Badge } from '@/components/ui/badge';
 
 export default function Skills() {
   const skillCategories = [
+     {
+      title: 'Programming Languages & Fundamentals',
+      skills: [
+        { name: 'C', level: 'Intermediate' },
+        { name: 'C++', level: 'Advanced' },
+        { name: 'Python', level: 'Advanced' },
+        { name: 'JavaScript', level: 'Advanced' },
+        { name: 'Data Structures & Algorithms', level: 'Intermediate'},
+        { name: 'OOP', level: 'Intermediate'}
+      ]
+    },
     {
       title: 'Frontend Development',
       skills: [
         { name: 'HTML5', level: 'Advanced' },
         { name: 'CSS3', level: 'Advanced' },
-        { name: 'JavaScript', level: 'Advanced' },
         { name: 'Responsive Design', level: 'Advanced' },
         { name: 'React.js', level: 'Intermediate' },
         { name: 'Tailwind CSS', level: 'Intermediate' },
@@ -18,29 +28,25 @@ export default function Skills() {
     {
       title: 'Backend Development',
       skills: [
-        { name: 'Python', level: 'Advanced' },
         { name: 'Django', level: 'Advanced' },
         { name: 'REST APIs', level: 'Advanced' },
-        { name: 'API Integration', level: 'Intermediate' }
+        { name: 'API Integration', level: 'Intermediate' },
+        { name: 'PostgreSQL', level:'Advanced'},
+        { name: 'SQLite', level: 'Advanced'}
+
       ]
     },
     {
-      title: 'Database & Tools',
+      title: 'Tools,DevOps & Cloud',
       skills: [
-        { name: 'PostgreSQL', level: 'Advanced' },
-        { name: 'SQLite', level: 'Advanced' },
-        { name: 'Git', level: 'Expert' }
-      ]
-    },
-    {
-      title: 'Cloud & DevOps',
-      skills: [
-        { name: 'Vercel', level: 'Expert' },
-        { name: 'Render', level: 'Expert' },
-        { name: 'CI/CD', level: 'Advanced' },
-        { name: 'GitHub Actions', level: 'Advanced' }
+        { name: 'Git', level: 'Expert' },
+        { name: 'Vercel', level: 'Expert'},
+        { name: 'Render', level: 'Expert'},
+        { name: 'CI/CD', level: 'Advanced'},
+        { name: 'GitHub', level: 'Advanced'}
       ]
     }
+   
   ];
 
   const getLevelColor = (level: string) => {
